@@ -1,4 +1,4 @@
-package dev.pablorjd.jetpackcomposeinstagram.core.network.model
+package dev.pablorjd.jetpackcomposeinstagram.login.data.network.model
 
 import com.google.gson.annotations.SerializedName
 
