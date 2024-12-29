@@ -11,6 +11,8 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import dev.pablorjd.jetpackcomposeinstagram.login.LoginScreen
+import dev.pablorjd.jetpackcomposeinstagram.login.LoginViewModel
 import dev.pablorjd.jetpackcomposeinstagram.ui.theme.JetpackComposeInstagramTheme
 
 class MainActivity : ComponentActivity() {
@@ -21,7 +23,7 @@ class MainActivity : ComponentActivity() {
             JetpackComposeInstagramTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
                     Box(modifier = Modifier.padding(innerPadding)) {
-                        LoginScreen()
+                        LoginScreen(LoginViewModel()) // le paso el viewmodel que estoy usando
                     }
 
                 }
