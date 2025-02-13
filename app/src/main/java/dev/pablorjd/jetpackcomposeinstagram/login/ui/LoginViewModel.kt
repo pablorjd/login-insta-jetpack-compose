@@ -40,6 +40,7 @@ class LoginViewModel @Inject constructor(private val loginUseCase: LoginUseCase)
         viewModelScope.launch {
             val resultado = loginUseCase(email.value!!, password.value!!)
 
+            Log.i("PABLO", "resultadook ${resultado}")
             if(resultado) {
                 Log.i("PABLO", "resultadook ${resultado}")
             }

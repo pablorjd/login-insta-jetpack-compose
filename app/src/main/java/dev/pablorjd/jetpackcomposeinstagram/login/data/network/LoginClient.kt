@@ -8,7 +8,7 @@ import retrofit2.http.Path
 
 interface LoginClient {
 
-    @GET(value = "v3/0220c249-341b-4d3d-b8c3-b2dbb0efaa82")
+    @GET(value = "v3/fc524a29-2dfb-48f9-ab33-8fa6f3d41337")
     suspend fun doLogin(
     ): Response<LoginResponse>
 }
