@@ -11,6 +11,10 @@ composeBom = "2024.04.01"
 iconsVertion = "1.7.5"
 retrofit = "2.9.0"
 runtimeLivedata = "1.7.6"
+hilt = "2.46"
+hiltAndroid = "2.46"
+hiltAndroidCompiler = "2.46"
+hiltNavigation = "1.2.0"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
@@ -38,7 +42,14 @@ androidx-material3-icons = { module = "androidx.compose.material:material-icons-
 retrofit2-retrofit = { module = "com.squareup.retrofit2:retrofit", version.ref = "retrofit" }
 retrofit2-converter-gson = { module = "com.squareup.retrofit2:converter-gson", version.ref = "retrofit" }
 
+#Hilt
+hilt-android = { module = "com.google.dagger:hilt-android", version.ref = "hiltAndroid" }
+hilt-android-comp = { module = "com.google.dagger:hilt-android-compiler", version.ref = "hiltAndroidCompiler" }
+androidx-hilt-navigation = { module = "androidx.hilt:hilt-navigation-compose", version.ref = "hiltNavigation" }
+
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
+
+hilt-android-plugin = { id = "com.google.dagger.hilt.android", version.ref = "hilt" }
 
